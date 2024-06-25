@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    overflow: auto;
+}
+body{
+    background-color: #8BA1BB;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+div.contenu{
+    background-color: white;
+    margin: 0px 10% 80px 10%;
+    padding: 30px;
+    box-shadow: 2px 2px 10px black;
+ 
+}
+
+div.cathegorie{
+    text-align: center;
+    margin-bottom: -18px;
+    margin-top: 60px;
+
+}
+
+p.cathegorie{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 8px 18px;
+    margin: 0;
+
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.bar{
+    background-color: gray;
+    height: 1px;
+    margin: 15px auto;
+    width: 160px;
+}
+.description{
+    max-width: 400px;
+    margin: 5px auto 18px auto;;
+    text-align: center;
+    font-size: 14px;
+}
+
+.presentation{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+img{
+    width: 100%;
+    display: block;
+    max-height: 400px;
+    object-fit: cover;
+    min-height: 400px;
+}
+
+.table{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #6c829dC0;
+    height: 80px;
+}
+.table th{
+    font-weight: bold;
+    padding: 10px 10px 0 10px;
+}
+.table td{
+    font-size: 12px;
+    padding: 0px 10px 10px 10px;
+    vertical-align: 0;
+}
+
+.colonne{
+    width: 45%;
+    display: inline-block;
+}
+
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-bottom: 5px solid lightgray;
+    
+}
+
+
+.colonne1 P{
+ border: 1px solid lightgray;
+ text-align: center;
+ padding: 10px ;
+ margin: 10px 0;
+}
+.colonne2{
+    float: right;
+}
+
+.colonne2 td:first-child{
+    background-color: #8BA1BB;
+    color:white;
+    font-size: 14px;
+    border-radius: 100%; 
+    padding: 5px 10px ;
+    box-sizing: border-box;
+    
+}
+.colonne2 td:last-child{
+    padding-left: 30px;
+}
+.colonne2 td{
+    height: 20px;
+}
+.colonne2 table{
+    border-collapse: separate;
+    border-spacing: 0 25px ;
+}
+
+
+@media screen and (width<650px) {
+    div.contenu{
+        background-color: white;
+        margin: 0px 0% 80px 0%;
+        padding: 30px;
+        
+    }
+    .colonne2{
+        float: none;
+    }
+    .colonne{
+        width: 100%;
+    }
+}
