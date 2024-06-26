@@ -1,10 +1,10 @@
 *{
     box-sizing: border-box;
-    overflow: auto;
 }
 body{
     background-color: #8BA1BB;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
 
 }
 div.contenu{
@@ -105,7 +105,7 @@ h2{
     float: right;
 }
 
-.colonne2 td:first-child{
+.colonne2 td p{
     background-color: #8BA1BB;
     color:white;
     font-size: 14px;
@@ -118,13 +118,8 @@ h2{
     padding-left: 30px;
 }
 .colonne2 td{
-    height: 20px;
+    height: 15px;
 }
-.colonne2 table{
-    border-collapse: separate;
-    border-spacing: 0 25px ;
-}
-
 
 @media screen and (width<650px) {
     div.contenu{
@@ -136,5 +131,18 @@ h2{
     }
     .colonne{
         width: 100%;
+    }
+
+}
+
+@media screen and (width<400px){
+    
+    .table th{
+        padding: 0;
+        font-size: 10px;
+    }
+    .table td{
+        font-size: 8px;
+        padding: 0;
     }
 }
